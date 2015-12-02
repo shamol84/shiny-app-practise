@@ -1,0 +1,5 @@
+library(maps)
+library(mapproj)
+source("shiny-app1/helpers.R")
+counties <- readRDS("shiny-app1/data/counties.rds")
+percent_map(counties$white, "darkgreen", "% white")
